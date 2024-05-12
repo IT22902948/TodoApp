@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".UpdateCard">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Update Details"
+        android:textColor="#000000"
+        android:textSize="36sp" />
+
+    <EditText
+        android:id="@+id/create_title"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        android:hint="Enter Your Task"
+        android:textStyle="italic"
+        android:padding="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#666666"/>
+
+    <EditText
+        android:id="@+id/create_priority"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:hint="Priority"
+        android:textStyle="italic"
+        android:padding="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#666666"/>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/update_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Update"
+            android:textColor="#FFFFFF"
+            android:background="#FFA500"
+            android:layout_marginEnd="5dp"/>
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete"
+            android:textColor="#FFFFFF"
+            android:background="#FFA500"
+            android:layout_marginStart="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
